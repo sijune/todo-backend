@@ -5,6 +5,7 @@ import com.sijune.todobackend.dto.ResponseDTO;
 import com.sijune.todobackend.dto.TodoDTO;
 import com.sijune.todobackend.model.TodoEntity;
 import com.sijune.todobackend.service.TodoService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -14,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Slf4j
 @RestController
 @RequestMapping("/todo")
 public class TodoController {
